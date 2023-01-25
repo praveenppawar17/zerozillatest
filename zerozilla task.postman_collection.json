@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "d94e41c7-7db6-4faa-b1d3-59ef337becfc",
+		"name": "zerozilla task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1781386"
+	},
+	"item": [
+		{
+			"name": "create agency and client",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYXZlZW4xMjNAZ21haWwuY29tIiwidXNlcklkIjoiNjNkMGI1MWE1MTE3M2MzMGRiOGVkNGE0IiwiaWF0IjoxNjc0NjIzODEwLCJleHAiOjE2NzQ2MjQ3MTB9.NYDS54nCPb4BGv-QKgaz4X7uhtyIBiN0AsNxMTqCiFI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"agency\":{\n        \"agencyName\":\"bo569687447\",\n        \"agencyPhone\":\"12345678903\",\n        \"agencyAddress1\":{\n            \"line1\": \"near majestice\",\n            \"line2\":\"beside SBI atm\",\n            \"city\":\"Bengaluru\",\n            \"state\":\"Karnataka\"\n        },\n        \"agencyAddress2\":{\n            \"line1\": \"near majestice\",\n            \"line2\":\"beside SBI atm\",\n            \"city\":\"Bengaluru\",\n            \"state\":\"Karnataka\"\n        }\n    },\n    \"client\":{\n        \"clientName\": \"prav8e72xyz\",\n        \"clientEmail\": \"pravee9n1722@gmail.com\",\n        \"clientPhone\":\"01234567890\",\n        \"totalBill\": 12384\n    }    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/agency",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"agency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get clients",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYXZlZW4xMjNAZ21haWwuY29tIiwidXNlcklkIjoiNjNkMGI1MWE1MTE3M2MzMGRiOGVkNGE0IiwiaWF0IjoxNjc0NjIzODEwLCJleHAiOjE2NzQ2MjQ3MTB9.NYDS54nCPb4BGv-QKgaz4X7uhtyIBiN0AsNxMTqCiFI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"agencyName\":\"bo34881\",\n        \"agencyPhone\":\"1234567891\",\n        \"agencyAddress1\":{\n            \"line1\": \"near majestice\",\n            \"line2\":\"beside SBI atm\",\n            \"city\":\"Bengaluru\",\n            \"state\":\"Karnataka\"\n        },\n        \"agencyAddress2\":{\n            \"line1\": \"near majestice\",\n            \"line2\":\"beside SBI atm\",\n            \"city\":\"Bengaluru\",\n            \"state\":\"Karnataka\"\n        }   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/clients",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"clients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update client",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByYXZlZW4xMjNAZ21haWwuY29tIiwidXNlcklkIjoiNjNkMGI1MWE1MTE3M2MzMGRiOGVkNGE0IiwiaWF0IjoxNjc0NjIzODEwLCJleHAiOjE2NzQ2MjQ3MTB9.NYDS54nCPb4BGv-QKgaz4X7uhtyIBiN0AsNxMTqCiFI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"clientName\":\"prav1237667\",\n    \"clientEmail\":\"praveen@3847474\",\n    \"clientPhone\":\"123456789098\",\n    \"totalBill\":12345678\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/updateclient/63d01627344d2874243b734f",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"updateclient",
+						"63d01627344d2874243b734f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/user/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"praveen123\",\n    \"email\":\"praveen123@gmail.com\",\n    \"password\":\"praveen123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"praveen123@gmail.com\",\n    \"password\":\"praveen123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
